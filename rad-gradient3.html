@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <title>rad-gradient3.html (repeat)</title>
+  <style>
+    body {
+      font-family: "Microsoft JhengHei", sans-serif;
+      padding: 40px;
+    }
+
+    h1 {
+      color: teal;
+    }
+
+    .gradient-box {
+      display: flex;
+      align-items: center;
+      font-size: 32px;
+      font-weight: bold;
+      margin: 20px 0;
+      height: 60px;
+    }
+
+    .text {
+      width: 80px;
+      text-align: center;
+      z-index: 1;
+    }
+
+    .background {
+      flex: 1;
+      height: 100%;
+    }
+
+    .grad1 {
+      background: repeating-linear-gradient(
+        to right,
+        gold,
+        gold 40px,
+        orange 40px,
+        orange 80px
+      );
+    }
+
+    .grad2 {
+      background: repeating-linear-gradient(
+        45deg,
+        red,
+        white 20px,
+        blue 40px
+      );
+    }
+
+    .grad3 {
+      background: repeating-radial-gradient(
+        circle,
+        orange,
+        yellow 10px,
+        orange 20px
+      );
+    }
+
+    .grad4 {
+      background: radial-gradient(circle, red, yellow, lightgreen);
+    }
+  </style>
+</head>
+<body>
+  <h1><a href="#">rad-gradient3.html(repeat)</a></h1>
+
+  <div class="gradient-box">
+    <div class="text">春曉</div>
+    <div class="background grad1"></div>
+  </div>
+
+  <div class="gradient-box">
+    <div class="text">送別</div>
+    <div class="background grad2"></div>
+  </div>
+
+  <div class="gradient-box">
+    <div class="text">紅豆</div>
+    <div class="background grad3"></div>
+  </div>
+
+  <div class="gradient-box">
+    <div class="text">雜詩</div>
+    <div class="background grad4"></div>
+  </div>
+</body>
+</html>
